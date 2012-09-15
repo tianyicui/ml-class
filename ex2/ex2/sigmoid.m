@@ -10,7 +10,7 @@ g = zeros(size(z));
 %               vector or scalar).
 
 
-
+g = ones(size(z)) ./ (ones(size(z)) .+ power(e, -z));
 
 
 % =============================================================
