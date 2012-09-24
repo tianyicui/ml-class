@@ -23,8 +23,8 @@ p = zeros(size(X, 1), 1);
 
 
 
-
-
+o = ones(m, 1)';
+[_, p] = max((Theta2 * [o; sigmoid(Theta1 *[o; X'])])', [], 2);
 
 
 
